@@ -1,0 +1,11 @@
+
+    <app-header *ngIf="!showForm"></app-header>
+        <app-sidebar></app-sidebar>
+<app-home *ngIf="!showForm"></app-home>
+<app-note-form *ngIf="showForm" (formClosed)="toggleForm()"></app-note-form>
+
+
+
+
+   
+     
